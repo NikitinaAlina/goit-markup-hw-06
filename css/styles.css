@@ -696,6 +696,7 @@ img {
 .footer-form {
   display: flex;
   padding-left: 80px;
+  background: #2e2f42;
 }
 .footer-modal-text {
   margin-bottom: 16px;
