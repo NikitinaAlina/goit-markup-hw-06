@@ -639,8 +639,7 @@ img {
   background-color: #404bbf;
   background-image: url(/images/Vector.svg);
 }
-.form-checkbox:checked {
-}
+
 .modal-form-chek-desc {
   display: flex;
   text-align: center;
@@ -709,13 +708,12 @@ img {
 }
 .footer-modal-icon {
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   border-radius: 4px;
   width: 264px;
   height: 40px;
   margin-right: 24px;
   outline: none;
-  background-color: ;
+
   padding-left: 16px;
 }
 .footer-modal-btn {
