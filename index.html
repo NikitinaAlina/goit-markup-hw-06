@@ -427,6 +427,30 @@
             </li>
           </ul>
         </div>
+        <div class="form-footer">
+          <form action="" class="footer-form">
+            <label for="">
+              <p class="footer-modal-text">Subscribe</p>
+
+              <span class="modal-span">
+                <input
+                  class="footer-modal-icon"
+                  name="user-telefon"
+                  type="tel"
+                  class="modal-input"
+                  required
+                  placeholder="E-mail"
+                />
+              </span>
+            </label>
+            <button class="footer-modal-btn mybtn">
+              Subscribe
+              <svg class="footer-modal-svg">
+                <use href="/images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div>
@@ -439,52 +463,71 @@
         <form class="modal-form">
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Name</span>
-            <input
-              type="text"
-              name="user_name"
-              class="modal-form-input"
-              required
-              pattern="^[a-zA-ZА-Яа-я]+$"
-              minlength="2"
-            />
+            <span class="modal-form-input-wrapper">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                required
+                pattern="[a-zA-ZА-Яа-я]"
+                minlength="2"
+              />
+              <svg class="icon-modal" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-modal-two"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Phone</span>
-            <input
-              type="tel"
-              name="user_phone"
-              class="modal-form-input"
-              required
-              pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
-            />
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form-input"
+                required
+                pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="icon-modal" width="13" height="13">
+                <use href="./images/symbol-defs.svg#icon-modal-one"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Email</span>
-            <input
-              type="email"
-              name="user_mail"
-              class="modal-form-input"
-              required
-            />
+            <span class="modal-form-input-wrapper">
+              <input
+                type="email"
+                name="user_mail"
+                class="modal-form-input"
+                required
+              />
+              <svg class="icon-modal" width="15" height="12">
+                <use href="./images/symbol-defs.svg#icon-modal-three"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Comment</span>
             <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
+              name="user_message"
               class="modal-form-message"
               placeholder="Text input"
             >
             </textarea>
           </label>
-          <input id="user-policy" type="text" class="modal-form-chek" />
-          <label for="user-policy" class="modal-form-chek-desc"
-            >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
-          </label>
+          <input
+            type="checkbox"
+            name="policy"
+            id="policy"
+            value="accept-policity"
+            class="form-checkbox hidden"
+          />
+          <span class="modal-form-custom-checkbox"> </span>
+          <span class="modal-form-chek-desc"
+            >I accept the terms and conditions of the&nbsp
+            <a href=""> Privacy Policy</a>
+          </span>
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
