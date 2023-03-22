@@ -601,7 +601,7 @@ img {
   margin-bottom: 16px;
 }
 .modal-form-field {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .icon-modal {
   display: block;
@@ -717,6 +717,7 @@ img {
   margin-left: 80px;
 }
 .footer-modal-text {
+  padding-left: 80px;
   margin-bottom: 16px;
   color: #ffffff;
 }
