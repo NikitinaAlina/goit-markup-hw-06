@@ -188,7 +188,7 @@ img {
   border: none;
   display: block;
   margin: 0 auto;
-  transition: background 250ms linear;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
@@ -591,7 +591,7 @@ img {
   font-size: 12px;
   display: block;
   color: #8e8f99;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   line-height: 1.17;
 }
 .modal-title {
@@ -600,7 +600,7 @@ img {
   margin-bottom: 16px;
 }
 .modal-form-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .icon-modal {
   display: block;
@@ -628,8 +628,10 @@ img {
 .modal-form-message:focus {
   border-color: 4d5ae5;
 }
+
 .modal-form-message::placeholder {
   color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
 }
 .modal-form-check-desc {
   display: flex;
@@ -719,6 +721,7 @@ img {
 .footer-modal-text {
   margin-bottom: 16px;
   color: #ffffff;
+  font-weight: 500;
 }
 .footer-label {
   margin-right: 24px;
@@ -751,7 +754,7 @@ img {
   align-self: end;
   padding-left: 24px;
   outline: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .footer-modal-btn:hover,
